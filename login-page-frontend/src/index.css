@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-size: 15px; */
+  font-family: 'Poppins', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+/* Adjust the font size based on the screen area */
+@media ( min-width : 768px) {
+  /* For screens wider than 16:9 (e.g. landscape-oriented), increase the font size */
+  body {
+    font-size: 50px;
+    /* calc(1vw + 1px); */
+    /* font-size: calc(16px + (24 - 16) * ((100vw - 480px) / (960 - 480))); */
+    
+  }
+}
+
+@media (max-width : 767px) {
+  /* For screens narrower than 16:9 (e.g. portrait-oriented), decrease the font size */
+  body {
+    font-size: 80px;
+    /* calc(1vw - 1px); */
+  }
+}
